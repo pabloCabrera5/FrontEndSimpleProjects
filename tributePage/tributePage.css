@@ -1,0 +1,45 @@
+body {
+    background: lightgrey;
+}
+header {
+    text-align: center;
+    padding: 10px;
+}
+header > p {
+    margin: 3px;
+}
+#img-div {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    
+}
+#image {
+    width: 100%;
+    max-width: 75%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+#tribute-info{
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+ul {
+    max-width: 550px;
+    margin: 0 auto 0px auto;
+    text-align: left;
+    line-height: 1.6;
+    font-size: large;
+}
+#info {
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+}
+#tribute-link {
+    display: block;
+    text-align: center;
+}

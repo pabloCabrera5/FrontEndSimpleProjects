@@ -1,0 +1,68 @@
+<!DOCTYPE html5>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./randomQuote.css" type="text/css">
+
+    <script src="./randomQuote.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Quote Machine</title>
+</head>
+
+<body>
+
+    <div id="quote-box">
+
+        <div id="text">
+            <p>
+                Change your thoughts and you change your world.
+            </p>
+        </div>
+
+        <div id="author">
+            <p>
+                - Norman Vincent Peale
+            </p>
+        </div>
+
+        <div id="buttons-quotes">
+            <a id="tweet-quote" href="https://twitter.com/intent/tweet?text=">
+                Tweet it!
+            </a>
+            <button id="new-quote" onclick="newQuote()" class="btn btn-default">
+                Get new quote!
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    $(document).ready(() => {
+        let url = $('#tweet-quote').attr('href').concat('Change your thoughts and you change your world. - Norman Vincent Peale');
+        $('#tweet-quote').attr('href', url);
+    })
+    /*
+    Another way using jquery in html
+    For require it in the js, we should npm install the module jQuery 
+    and then make a browserify so we can use the require in the we
+    */
+    /*$(document).ready(function () {
+        $("#newQuote").click(function () {
+            $("#author > p").text("Hello world!");
+        });
+        $("#btn2").click(function () {
+            $("#test2").html("<b>Hello world!</b>");
+        });
+    });*/
+</script>

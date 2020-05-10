@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgba(62, 62, 236, 0.5);
+  color: rgba(62, 62, 236, 0.5);
+}
+
+#quote-box {
+  position: relative;
+  top: 35%;
+  background: white;
+  width: 30%;
+  margin: auto;
+  height: auto;
+  border: 3px solid #af014f;
+  border-radius: 7px;
+  box-shadow: 3px 3px 5px #e7ad41, -3px -3px 5px #e7ad41;
+  text-align: center;
+}
+#quote-box #text {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 1.75em;
+  height: auto;
+}
+#quote-box #text p {
+  padding-top: 15px;
+}
+#quote-box #author {
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: right;
+  height: auto;
+}
+#quote-box #author p {
+  padding-right: 15px;
+}
+#quote-box #buttons-quotes {
+  padding: 15px 10px 40px 15px;
+  /*width: 100%;
+  position: absolute;
+  bottom: 20px;*/
+}
+#quote-box #buttons-quotes a {
+  float: left;
+  padding-top: 10px;
+}
+#quote-box #buttons-quotes button {
+  float: right;
+}
+
+@media screen and (max-width: 1050px) {
+  #quote-box {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #quote-box {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=randomQuote.css.map */

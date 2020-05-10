@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="landingPage.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="landingLogo.jpg" id="header-img" alt="CompanyLogo" />
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a href="#info" class="nav-link">
+                        Information
+                    </a>
+                </li>
+                <li>
+                    <a href="#schedule" class="nav-link">
+                        Schedule
+                    </a>
+                </li>
+                <li>
+                    <a href="#prices" class="nav-link">
+                        Prices
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="register">
+        <h2>Master gym</h2>
+        <h3>Register now to keep update!</h3>
+        <form id="form" action="">
+            <input id="email" name="email" type="email" placeholder="Enter your email" required />
+            <input id="submit" type="submit" value="Submit it!" />
+        </form>
+    </section>
+
+    <div class="video" style="text-align: center;">
+        <!--<video id="video" controls>
+            <source src="https://www.youtube.com/watch?v=auzoQDmj9ck" type="video/mp4">
+        </video>-->
+
+        <iframe id="video" width="50%" height="315" src="https://www.youtube.com/embed/FuOWYPQTpio">
+        </iframe>
+    </div>
+
+    <div id="content">
+        <section class="info" id="info">
+            <p>
+                <strong>Information of gym: </strong><br><br>
+                A gymnasium, also known as a gym, is a covered location for gymnastics, athletics and gymnastic
+                services. The word is derived from the ancient Greek gymnasium. ... "Gym" is also slang for "fitness
+                centre", which is often an area for indoor recreation. A gym may be open air as well.<br>
+                A gym encourages you to do a balanced program that includes both aerobic and strength training
+                exercises. These promote heart health and weight loss, help prevent osteoporosis and improve muscle
+                strength, balance and flexibility.<br>
+                And here you have some reasons to go to the gym and if is in this much better :
+                <ul>
+                    <li>Get Healthy</li>
+                    <li>Get Stress Out</li>
+                    <li>Meet cool people</li>
+                    <li>Burn some calories, sweats!</li>
+                    <li>Profit your time</li>
+                </ul>
+            </p>
+
+        </section>
+
+        <section class="schedule" id="schedule">
+            <p>
+                We have an spectacular schedule:
+            </p>
+            <ul>
+                <li>Mon-Fri: 07h00-23h00</li>
+                <li>Sat: 08h00-20h00</li>
+                <li>Sun: 08h00-17h00</li>
+            </ul>
+            <p>And we have a magnifical classes offers:</p>
+            <div style="overflow: auto;">
+                <table>
+                    <caption>Weekly classes</caption>
+                    <thead>
+                        <tr>
+                            <th>Time </th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09-10</td>
+                            <td>Spinning</td>
+                            <td>Abds</td>
+                            <td>Full-Body</td>
+                            <td>HIIT</td>
+                            <td>CrossFit</td>
+                            <td>Weight-techniques</td>
+                            <td>Spinning-Abds</td>
+                        </tr>
+                        <tr>
+                            <td>11-12</td>
+                            <td>Spinning</td>
+                            <td>Abds</td>
+                            <td>Full-Body</td>
+                            <td>HIIT</td>
+                            <td>CrossFit</td>
+                            <td>Weight-techniques</td>
+                            <td>Spinning-Abds</td>
+                        </tr>
+                        <tr>
+                            <td>15-16</td>
+                            <td>Spinning</td>
+                            <td>Abds</td>
+                            <td>Full-Body</td>
+                            <td>HIIT</td>
+                            <td>CrossFit</td>
+                            <td>Weight-techniques</td>
+                            <td>Spinning-Abds</td>
+                        </tr>
+                        <tr>
+                            <td>16-17</td>
+                            <td>Spinning</td>
+                            <td>Abds</td>
+                            <td>Full-Body</td>
+                            <td>HIIT</td>
+                            <td>CrossFit</td>
+                            <td>Weight-techniques</td>
+                            <td>Spinning-Abds</td>
+                        </tr>
+                        <tr>
+                            <td>18-19</td>
+                            <td>Spinning</td>
+                            <td>Abds</td>
+                            <td>Full-Body</td>
+                            <td>HIIT</td>
+                            <td>CrossFit</td>
+                            <td>Weight-techniques</td>
+                            <td>Spinning-Abds</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="prices" id="prices">
+            <div class="card" id="price1">
+                <h5>Basic</h5>
+                <p>
+                    This is the basic rate in which you will have the following options:
+                </p>
+                <ul>
+                    <li>Fees: 10€</li>
+                    <li>Access to 3 class per week</li>
+                    <li>Musculation room</li>
+                </ul>
+                <p class="numPrice">15€</p>
+            </div>
+            <div class="card" id="price2">
+                <h5>Premium</h5>
+                <p>
+                    This is the premium rate in which you will have the following options:
+                </p>
+                <ul>
+                    <li>Fees: 0€</li>
+                    <li>All classes you can!</li>
+                    <li>Musculation room</li>
+                    <li>Technification and alimentation sessions</li>
+                    <li>Free water with savour</li>
+                </ul>
+                <p class="numPrice">35€</p>
+            </div>
+        </section>
+
+    </div>
+
+
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2020, Original Gym</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="surveyForm.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id='title'>Welcome to the stylish form</h1><br>
+        <p id="description"> In this page we can see a empty form, which is your turn to complete it! Lets go!</p><br>
+    </header>
+
+    <form id="survey-form" action="">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Set your name" required><br>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Set your email" required><br>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input id="number" type="number" name="number" min="18" max="50" placeholder="Set your age" required><br>
+        </div>
+        <div class="form-group">
+            <label id="dropdown-label">
+                Which season is your favorite ?
+            </label>
+            <select id="dropdown">
+                <option>Summer</option>
+                <option>Winter</option>
+                <option>Fall</option>
+                <option>Spring</option>
+            </select>
+            <br>
+        </div>
+
+        <div class="form-group">
+            <p>What's your favorite car brand ?</p>
+            <label for="radio1">
+                <input type="radio" name="car" id="radio1" value="BMW">BMW
+            </label>
+            <label for="radio2">
+                <input type="radio" name="car" id="radio2" value="Mercedez">Mercedez
+            </label>
+            <label for="radio3">
+                <input type="radio" name="car" id="radio3" value="Audi">Audi
+            </label>
+            <label for="radio4">
+                <input type="radio" name="car" id="radio4" value="Porshe">Porshe
+            </label>
+            <label for="radio5">
+                <input type="radio" name="car" id="radio5" value="Lambo">Lambo
+            </label>
+            <br>
+        </div>
+
+        <div class="form-group">
+            <p>What's your favorite sport ?</p>
+            <label for="check1">
+                <input type="checkbox" id="check1" name="sport" value="Football">Football
+            </label>
+            <label for="check2">
+                <input type="checkbox" id="check2" name="sport" value="Basket">Basket
+            </label>
+            <label for="check3">
+                <input type="checkbox" id="check3" name="sport" value="Tennis">Tennis
+            </label>
+            <label for="check4">
+                <input type="checkbox" id="check4" name="sport" value="Padel">Padel
+            </label>
+            <label for="check5">
+                <input type="checkbox" id="check5" name="sport" value="Pingpong">Ping-Pong
+            </label>
+            <br>
+        </div>
+
+        <div class="form-group">
+            <p>We would like to read your comments!</p>
+            <textarea id="textarea" placeholder="Please enter here your comments" name="textarea"></textarea>
+            <br>
+        </div>
+
+        <div class="form-group">
+            <button id="submit" type="submit">
+                Submit!
+            </button>
+        </div>
+
+    </form>
+</body>
+
+</html>

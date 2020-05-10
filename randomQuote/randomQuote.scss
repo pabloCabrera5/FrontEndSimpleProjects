@@ -1,0 +1,75 @@
+$blue-color: rgb(62, 62, 236,0.5);
+$red-color: rgb(175,1,79);
+$orange-color: rgb(231, 173, 65);
+
+$back-color:  rgb(104, 39, 39);
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $blue-color;
+    color: $blue-color;
+}
+
+#quote-box{
+    position: relative;
+    top: 35%;
+    background: rgb(255, 255, 255);
+    width: 30%;
+    margin: auto;
+    height: auto;
+    border: 3px solid rgb(175,1,79);
+    border-radius: 7px;
+    
+    box-shadow: 3px 3px 5px rgb(231, 173, 65), -3px -3px 5px rgb(231, 173, 65);
+    text-align: center;
+    //display: table;
+
+    #text {
+        //color: $blue-color;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        font-size: 1.75em;
+        height: auto;
+        p {
+            padding-top: 15px;
+        }
+    }
+    #author {
+        //color: $blue-color;
+        font-style: italic;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: right;
+        height: auto;
+        p {
+            padding-right: 15px;
+        }
+    }
+
+    #buttons-quotes {
+        padding: 15px 10px 40px 15px;
+        // better not use to for more flebility in the text
+        /*width: 100%;
+        position: absolute;
+        bottom: 20px;*/
+        a{
+            float: left;
+            padding-top: 10px;
+        }
+        button {
+            float: right;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px){
+    #quote-box{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 600px){
+    #quote-box{
+        width: 100%;
+    }
+}
